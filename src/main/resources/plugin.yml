@@ -1,0 +1,12 @@
+name: MMOCheck
+version: '1.0'
+main: net.danh.mMOCheck.MMOCheck
+api-version: '1.13'
+authors: [ VoChiDanh ]
+depend:
+  - PlaceholderAPI
+  - MMOItems
+  - MythicLib
+commands:
+  mmocheck:
+    description: mmocheck remove <type> <id> <player> <amount> (No message on command)
