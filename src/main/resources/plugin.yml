@@ -1,6 +1,6 @@
 name: MMOCheck
 version: '1.0'
-main: net.danh.mMOCheck.MMOCheck
+main: net.danh.mmocheck.MMOCheck
 api-version: '1.13'
 authors: [ VoChiDanh ]
 depend:

@@ -1,8 +1,8 @@
-package net.danh.mMOCheck.command;
+package net.danh.mmocheck.command;
 
 import net.Indyuce.mmoitems.MMOItems;
-import net.danh.mMOCheck.utils.CMDBase;
-import net.danh.mMOCheck.utils.Items;
+import net.danh.mmocheck.utils.CMDBase;
+import net.danh.mmocheck.utils.Items;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;

@@ -1,6 +1,6 @@
-package net.danh.mMOCheck.utils;
+package net.danh.mmocheck.utils;
 
-import net.danh.mMOCheck.MMOCheck;
+import net.danh.mmocheck.MMOCheck;
 import org.bukkit.command.*;
 import org.jetbrains.annotations.NotNull;
 

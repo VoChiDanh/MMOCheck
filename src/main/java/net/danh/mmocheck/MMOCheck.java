@@ -1,7 +1,7 @@
-package net.danh.mMOCheck;
+package net.danh.mmocheck;
 
-import net.danh.mMOCheck.command.MMC_CMD;
-import net.danh.mMOCheck.papi.Placeholder;
+import net.danh.mmocheck.command.MMC_CMD;
+import net.danh.mmocheck.papi.Placeholder;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class MMOCheck extends JavaPlugin {

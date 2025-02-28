@@ -1,4 +1,4 @@
-package net.danh.mMOCheck.utils;
+package net.danh.mmocheck.utils;
 
 import io.lumine.mythic.lib.api.item.NBTItem;
 import net.Indyuce.mmoitems.MMOItems;
@@ -28,6 +28,38 @@ public class Items {
                 removeItems(p, type, id, amount);
             }
         }
+    }
+
+    public static boolean checkItemID(ItemStack itemStack, String type, String id) {
+        NBTItem nbtItem = NBTItem.get(itemStack);
+        if (nbtItem != null) {
+            return (nbtItem.hasType() && nbtItem.getType().equalsIgnoreCase(type))
+                    && (nbtItem.getString("MMOITEMS_ITEM_ID").equalsIgnoreCase(id));
+        } else return false;
+    }
+
+    public static boolean checkItemIDEnd(ItemStack itemStack, String type, String id) {
+        NBTItem nbtItem = NBTItem.get(itemStack);
+        if (nbtItem != null) {
+            return (nbtItem.hasType() && nbtItem.getType().equalsIgnoreCase(type))
+                    && (nbtItem.getString("MMOITEMS_ITEM_ID").endsWith(id));
+        } else return false;
+    }
+
+    public static boolean checkItemIDStart(ItemStack itemStack, String type, String id) {
+        NBTItem nbtItem = NBTItem.get(itemStack);
+        if (nbtItem != null) {
+            return (nbtItem.hasType() && nbtItem.getType().equalsIgnoreCase(type))
+                    && (nbtItem.getString("MMOITEMS_ITEM_ID").startsWith(id));
+        } else return false;
+    }
+
+    public static boolean checkItemIDContain(ItemStack itemStack, String type, String id) {
+        NBTItem nbtItem = NBTItem.get(itemStack);
+        if (nbtItem != null) {
+            return (nbtItem.hasType() && nbtItem.getType().equalsIgnoreCase(type))
+                    && (nbtItem.getString("MMOITEMS_ITEM_ID").contains(id));
+        } else return false;
     }
 
     public static int getPlayerAmount(@NotNull HumanEntity player, String type, String id) {
